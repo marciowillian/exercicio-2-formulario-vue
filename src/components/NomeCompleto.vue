@@ -1,19 +1,20 @@
 <template>
   <div>
     <Rotulo nome="Nome">
-      <input type="text" @input="alterarNome" :name="name.nome" />
+      <input type="text" @input="alterarNome" :value="value.nome"/>
     </Rotulo>
     <Rotulo nome="Sobrenome">
-      <input type="text" @input="alterarSobrenome" :name="name.sobrenome" />
+      <input type="text" @input="alterarSobrenome" :value="value.sobrenome"/>
     </Rotulo>
   </div>
 </template>
 
 <script>
 import Rotulo from "./Rotulo";
+
 export default {
   props: {
-    name: { type: Object, required: true },
+    value: { type: Object, required: true },
   },
   components: { Rotulo },
   methods: {

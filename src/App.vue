@@ -4,7 +4,7 @@
     <div class="conteudo">
       <form class="painel" v-if="!enviado">
         <div class="cabecalho">Formulário</div>
-        <NomeCompleto  v-model="nomeCompleto"/>
+        <NomeCompleto v-model="nomeCompleto"/>
         <Rotulo nome="E-mail">
           <input type="text" v-model.lazy.trim="usuario.email" />
         </Rotulo>
